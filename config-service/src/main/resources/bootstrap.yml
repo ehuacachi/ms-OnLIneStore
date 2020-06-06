@@ -11,8 +11,8 @@ spring:
         git:
           uri: git@github.com:ehuacachi/ms-OnLIneStore.git
           searchPaths: config-data
-          username: ehuacachi@gmail.com
-          password: 9xPiwZ3r123
+          username: ${GIT_USER}
+          password: ${GIT_PASSWORD}
   security:
     user:
       name: root
