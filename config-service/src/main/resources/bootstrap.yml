@@ -8,10 +8,11 @@ spring:
   cloud:
     config:
       server:
-        git: git@github.com:ehuacachi/ms-OnLIneStore.git
-        searchPaths: config-data
-        username: ${GIT_USER}
-        password: ${GIT_PASSWORD}
+        git:
+          uri: git@github.com:ehuacachi/ms-OnLIneStore.git
+          searchPaths: config-data
+          username: ehuacachi@gmail.com
+          password: 9xPiwZ3r123
   security:
     user:
       name: root
