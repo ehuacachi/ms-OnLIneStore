@@ -9,7 +9,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:ehuacachi/ms-OnLIneStore.git
+          uri: https://github.com/ehuacachi/ms-OnLineStore.git
           searchPaths: config-data
           username: ${GIT_USER}
           password: ${GIT_PASSWORD}
