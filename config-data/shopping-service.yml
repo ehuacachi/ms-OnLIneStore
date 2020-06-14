@@ -39,8 +39,26 @@ logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTERN:-%5p} %m%n"
 
-
+  # ===============================
+  # Eureka client
+  # ===============================
 eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
+
+  # ===============================
+  # Histrix --> Habilitado con Feign
+  # ===============================
+Feign:
+  hystrix:
+    enabled: true
+
+  # ===============================
+  # Actuator --> Para trabajar con Dashboard de Hystrix
+  # ===============================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
