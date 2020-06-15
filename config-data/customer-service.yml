@@ -47,3 +47,12 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
+
+  # ===============================
+  # Actuator --> También para trabajar con Dashboard de Hystrix
+  # ===============================
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

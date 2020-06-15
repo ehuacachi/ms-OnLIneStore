@@ -55,7 +55,7 @@ Feign:
     enabled: true
 
   # ===============================
-  # Actuator --> Para trabajar con Dashboard de Hystrix
+  # Actuator --> También para trabajar con Dashboard de Hystrix
   # ===============================
 management:
   endpoints:
